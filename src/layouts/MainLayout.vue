@@ -19,26 +19,47 @@
       </q-toolbar>
     </q-header>
 
+    <!-- DRAWER -->
+    <!-- Drawer Containing Side Bar -->
     <q-drawer
       v-model="leftDrawerOpen"
       show-if-above
       bordered
-      content-class="bg-grey-1"
-    >
-      <q-list>
+      content-class="bg-grey-1">
+      
+      <!-- SIDE BAR -->
+      <!-- This Is The Side Bar Menu Containing Menu Options -->
+      <q-list class="Sidebar">
+
+        <!-- Title Test -->
         <q-item-label
           header
-          class="text-grey-8"
-        >
-          Essential Links
+          class="Test">
+          Test
         </q-item-label>
+
+
+        <div class="Group-12">
+          <q-item-label
+            header
+            class="Payments">
+            Payments <img src="" alt="">
+
+          </q-item-label>
+
+        </div>
+
+
         <EssentialLink
           v-for="link in essentialLinks"
           :key="link.title"
           v-bind="link"
         />
       </q-list>
+      <!-- COLLAPSE SIDE BAR -->
+
     </q-drawer>
+    <!-- COLLAPSE DRAWER -->
 
     <q-page-container>
       <router-view />

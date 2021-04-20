@@ -1,1 +1,51 @@
-// app global css in SCSS form
+// Side Bar 
+.Sidebar {
+  flex-grow: 0;
+  background-color: #ffffff;
+}
+
+.Test {
+    width: 68px;
+    height: 39px;
+    margin: 0 96px 26px 12px;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: -1.28px;
+    text-align: center;
+    color: #484a4f;
+    padding-top: 26px;
+    padding-left: 32px;
+  }
+  
+  .Payments {
+    width: 85px;
+    height: 20px;
+    flex-grow: 0;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #828282;
+  }
+
+
+
+.Group-12 {
+    width: 180px;
+    height: 20px;
+    flex-grow: 0;
+    margin: 0 22px 34px 12px;
+    padding: 0 95px 0 0;
+  }
+
+  .Polygon-1 {
+    width: 16px;
+    height: 14px;
+    transform: rotate(180deg);
+    padding-right: 244px;
+  }
