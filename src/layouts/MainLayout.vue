@@ -22,6 +22,7 @@
     <!-- DRAWER -->
     <!-- Drawer Containing Side Bar -->
     <q-drawer
+      class="Bar"
       v-model="leftDrawerOpen"
       show-if-above
       bordered
@@ -38,23 +39,39 @@
           Test
         </q-item-label>
 
-
+        <!-- Title Payment -->
         <div class="Group-12">
           <q-item-label
             header
             class="Payments">
-            Payments <img src="" alt="">
-
+            Payments <div class="Polygon-1">▼</div>
           </q-item-label>
-
         </div>
 
-
+        <!-- Payment Section Links -->
+        <!-- Contains Links in Payment Section -->
         <EssentialLink
+          class="Group-3"
           v-for="link in essentialLinks"
           :key="link.title"
-          v-bind="link"
-        />
+          v-bind="link"/>
+
+        <!-- Border Line Above Commerce -->
+        <div class="Line-2"></div>
+
+        <!-- Title Commerce -->
+        <div class="Group-12">
+          <q-item-label
+            header
+            style="margin-top: 24px;"
+            class="Payments">
+            Commerce <div class="Polygon-1">▲</div>
+          </q-item-label>
+        </div>
+
+        <!-- Border Line Below Commerce -->
+        <div class="Line-3"></div>
+        
       </q-list>
       <!-- COLLAPSE SIDE BAR -->
 
@@ -68,51 +85,41 @@
 </template>
 
 <script>
-import EssentialLink from 'components/EssentialLink.vue'
 
+// SIDE BAR MENU OPTION LINKS,TITLE AND ICONS
+import EssentialLink from 'components/EssentialLink.vue'
 const linksData = [
   {
-    title: 'Docs',
-    caption: 'quasar.dev',
-    icon: 'school',
-    link: 'https://quasar.dev'
+    title: 'Transactions',
+    icon: 'compare_arrows',
+    link: '#transactions'
   },
   {
-    title: 'Github',
-    caption: 'github.com/quasarframework',
-    icon: 'code',
-    link: 'https://github.com/quasarframework'
+    title: 'Customers',
+    icon: 'people',
+    link: '#customers'
   },
   {
-    title: 'Discord Chat Channel',
-    caption: 'chat.quasar.dev',
-    icon: 'chat',
-    link: 'https://chat.quasar.dev'
+    title: 'Payouts',
+    icon: 'payment',
+    link: '#payouts'
   },
   {
-    title: 'Forum',
-    caption: 'forum.quasar.dev',
-    icon: 'record_voice_over',
-    link: 'https://forum.quasar.dev'
+    title: 'Balances',
+    icon: 'account_balance_wallet',
+    link: '#balances'
   },
   {
-    title: 'Twitter',
-    caption: '@quasarframework',
-    icon: 'rss_feed',
-    link: 'https://twitter.quasar.dev'
+    title: 'Subscriptions',
+    icon: 'offline_pin',
+    link: '#subscriptions'
   },
   {
-    title: 'Facebook',
-    caption: '@QuasarFramework',
-    icon: 'public',
-    link: 'https://facebook.quasar.dev'
-  },
-  {
-    title: 'Quasar Awesome',
-    caption: 'Community Quasar projects',
-    icon: 'favorite',
-    link: 'https://awesome.quasar.dev'
+    title: 'Payment plans',
+    icon: 'list',
+    link: '#payment plans'
   }
+
 ];
 
 export default {
