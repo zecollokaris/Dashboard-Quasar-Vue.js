@@ -22,7 +22,9 @@
   }
 
 /* #################################### */
-// Group Section
+// Payment Section
+/* #################################### */
+
 // This is the Group Section Containing Payment and Polygon
 .Group-12 {
     width: 180px;
@@ -61,11 +63,33 @@
     font-size: 14px;
     color: #828282;
 }
+/* #################################### */
+// COMMERCE SECTION
+/* #################################### */
 
+// Border Line Above Commerce
 .Line-2 {
     width: 244px;
     margin: 0 33px 0 24px;
     border: 1px solid #dde7f1;
     margin-top: 33px;
-  }
-  
+}
+
+// Border Line Below Commerce
+.Line-3 {
+    width: 244px;
+    margin: 0 33px 0 24px;
+    border: 1px solid #dde7f1;
+    margin-top: 23px;
+}
+
+.Commerce{
+    height: 24px;
+    flex-grow: 0;
+    margin: 3px 0 4px 16px;
+    font-family: Montserrat;
+    font-size: 14px;
+    color: #828282;
+}
+
+/* #################################### */

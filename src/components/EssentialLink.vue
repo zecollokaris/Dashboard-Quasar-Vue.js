@@ -19,20 +19,17 @@
       <q-item-label>{{ title }}</q-item-label>
     </q-item-section>
   </q-item>
+
+
 </template>
 
 <script>
 export default {
-  name: 'EssentialLink',
+  name: 'PaymentLink',
   props: {
     title: {
       type: String,
       required: true
-    },
-
-    caption: {
-      type: String,
-      default: ''
     },
 
     link: {
@@ -46,4 +43,6 @@ export default {
     }
   }
 }
+
+
 </script>
