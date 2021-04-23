@@ -39,57 +39,48 @@
           Test
         </q-item-label>
 
+      
+      <!-- PAYMENT SECTION -->
+      <!-- Payment Item Expansion Item -->
       <q-expansion-item
+        class="Title-Payments"
+        label="Payments"
+        default-opened>
         
-        dense-toggle
-        switch-toggle-side
-        icon="perm_identity"
-        label="Account settings">
-        
-        <q-card>
+
+        <q-card class="Card-Payments">
           <q-card-section>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, eius reprehenderit eos corrupti
-            commodi magni quaerat ex numquam, dolorum officiis modi facere maiores architecto suscipit iste
-            eveniet doloribus ullam aliquid.
+
+            <!-- Payment Section Links -->
+            <!-- Contains Links in Payment Section -->
+            <EssentialLink
+              class="Group-3"
+              v-for="link in essentialLinks"
+              :key="link.title"
+              v-bind="link"/>
+            
           </q-card-section>
         </q-card>
+
       </q-expansion-item>
-
-        <!-- PAYMENT SECTION -->
-        <!-- Title Payment -->
-        <div class="Group-12">
-          <q-item-label
-            header
-            class="Payments">
-            Payments <div class="Polygon-1">▼</div>
-          </q-item-label>
-        </div>
-
-        <!-- Payment Section Links -->
-        <!-- Contains Links in Payment Section -->
-        <EssentialLink
-          class="Group-3"
-          v-for="link in essentialLinks"
-          :key="link.title"
-          v-bind="link"/>
-
         <!-- COLLAPSE PAYMENT SECTION -->
 
 
-        <!-- COMMERCE SECTION -->
-        <!-- Border Line Above Commerce -->
-        <div class="Line-2"></div>
+      <!-- Border Line Above Commerce -->
+      <div class="Line-2"></div>
 
-        <!-- Title Commerce -->
-        <div class="Group-12">
-          <q-item-label
-            header
-            style="margin-top: 4px;"
-            class="Payments">
-            Commerce <div class="Polygon-1">▲</div>
-          </q-item-label>
-        </div>
+      <!-- COMMERCE SECTION -->
+      <!-- Payment Item Expansion Item -->
+      
+      <q-expansion-item
+        class="Title-Commerce"
+        label="Commerce"
+        default-opened>
+        
 
+        <q-card class="Card-Commerce" >
+          <q-card-section >
+        
         <!-- Border Line Below Commerce -->
         <div class="Line-3"></div>
         
@@ -97,6 +88,7 @@
         <!-- Commerce Menu Items -->
         <div class="Commerce">
 
+            <!-- Refferrals Menu-->
             <q-item to="/referrals" clickable v-ripple>
               <q-item-section avatar>
                 <q-icon name="group_work" />
@@ -106,7 +98,7 @@
             </q-item>
 
 
-
+            <!-- Audit Logs Menu-->
             <q-item to="/audit log" clickable v-ripple>
               <q-item-section avatar>
                 <q-icon name="visibility" />
@@ -116,7 +108,7 @@
             </q-item>
 
 
-
+            <!-- Settings Menu-->
             <q-item to="/setting" clickable v-ripple>
               <q-item-section avatar>
                 <q-icon name="settings" />
@@ -124,8 +116,14 @@
 
               <q-item-section>Settings</q-item-section>
             </q-item>
+
         </div>
         <!-- COLLAPSE COMMERCE SECTION -->
+            
+          </q-card-section>
+        </q-card>
+      </q-expansion-item>
+
 
         
         
@@ -190,3 +188,4 @@ export default {
   }
 }
 </script>
+
