@@ -1,7 +1,7 @@
 <template>
     <q-layout view="lHh lpr lFf" class="shadow-2 rounded-borders">
 
-              <q-header bordered class="bg-white text-primary">
+              <q-header class="bg-white text-primary">
                 <!-- MENU BAR -->
                 <!-- Menu Bar Containing (Search, Live, Language Menu, Notificaton & User) -->
                 <q-toolbar class="Navigation-Menu">

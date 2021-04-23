@@ -1,7 +1,10 @@
 <template>
-  <q-page class="flex flex-center">
-    <h1>This Is a test</h1>
-  </q-page>
+  <div class="Hey-User">
+    <p style="color: #ffa14e;" id="Hey-User" > 👋 Hey User</p>
+
+    <p id="Your-dummy-dashboard">Your dummy dashboard</p>
+  </div>
+
 </template>
 
 <script>
