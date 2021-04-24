@@ -12,7 +12,7 @@
         label="Last 30 days">
 
         <!-- Last 30 days Drop Down -->
-        <q-list>
+        <q-list class="DropDown-Text">
           <q-item clickable v-close-popup>
               <q-item-section avatar>
                 <q-avatar icon="today" color="info" text-color="white" />
@@ -38,12 +38,16 @@
           </q-item>
         </q-list>
       </q-btn-dropdown>
+
+
+
   </div>
 
 
 </template>
 
 <script>
+
 export default {
   name: 'PageIndex'
 }
