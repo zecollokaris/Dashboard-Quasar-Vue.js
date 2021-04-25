@@ -1,166 +1,173 @@
 <template>
 
   
-
-  <div class="Hey-User">
-
-
-    
-
-  <div class="q-pa-md" style="max-width: 600px">
-    <q-card>
-      <q-tabs
-        v-model="tab"
-        dense
-        class="text-grey"
-        active-color="primary"
-        indicator-color="primary"
-        align="justify"
-      >
-        <q-tab name="mails" label="Mails" />
-        <q-tab name="alarms" label="Alarms" />
-        <q-tab name="movies" label="Movies" />
-      </q-tabs>
-
-      <q-separator />
-
-      <q-tab-panels v-model="tab" animated>
-        <q-tab-panel name="mails" class="q-pa-none">
-
-          <q-splitter
-            v-model="splitterModel"
-            style="height: 250px"
-          >
-
-            <template v-slot:before>
-              <q-tabs
-                v-model="innerTab"
-                vertical
-                class="text-teal"
-              >
-                <q-tab name="innerMails" icon="mail" label="Mails" />
-                <q-tab name="innerAlarms" icon="alarm" label="Alarms" />
-                <q-tab name="innerMovies" icon="movie" label="Movies" />
-              </q-tabs>
-            </template>
-
-            <template v-slot:after>
-              <q-tab-panels
-                v-model="innerTab"
-                animated
-                transition-prev="slide-down"
-                transition-next="slide-up"
-              >
-                <q-tab-panel name="innerMails">
-                  <div class="text-h4 q-mb-md">Mails</div>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
-                </q-tab-panel>
-
-                <q-tab-panel name="innerAlarms">
-                  <div class="text-h4 q-mb-md">Alarms</div>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
-                </q-tab-panel>
-
-                <q-tab-panel name="innerMovies">
-                  <div class="text-h4 q-mb-md">Movies</div>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
-                </q-tab-panel>
-              </q-tab-panels>
-            </template>
-
-          </q-splitter>
-        </q-tab-panel>
-
-        <q-tab-panel name="alarms">
-          <div class="text-h6">Alarms</div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </q-tab-panel>
-
-        <q-tab-panel name="movies">
-          <div class="text-h6">Movies</div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </q-tab-panel>
-      </q-tab-panels>
-    </q-card>
-  </div>
+<div class="q-pa-md">
+  <div class="row">
 
 
+      <div class="Hey-User">
 
+          <div class="col-8">
 
+              <p style="color: #ffa14e;" id="Hey-User" > 👋 Hey User</p>
 
+              <p id="Your-dummy-dashboard">Your dummy dashboard</p>
 
+              <q-btn-dropdown
+                split
+                rounded-borders
+                class="no-shadow"
+                no-caps
+                label="Last 30 days">
 
-    <p style="color: #ffa14e;" id="Hey-User" > 👋 Hey User</p>
+                <!-- Last 30 days Drop Down -->
+                <q-list class="DropDown-Text">
+                  <q-item clickable v-close-popup>
+                      <q-item-section avatar>
+                        <q-avatar icon="today" color="info" text-color="white" />
+                      </q-item-section>
+                      <q-item-section>
+                        <q-item-label>Last 1 week</q-item-label>
+                      </q-item-section>
+                      <q-item-section side>
+                        <q-icon name="done" color="#ecccff" />
+                      </q-item-section>
+                  </q-item>
 
-    <p id="Your-dummy-dashboard">Your dummy dashboard</p>
+                  <q-item clickable v-close-popup>
+                      <q-item-section avatar>
+                        <q-avatar icon="event" color="info" text-color="white" />
+                      </q-item-section>
+                      <q-item-section>
+                        <q-item-label>Last 24 hours</q-item-label>
+                      </q-item-section>
+                      <q-item-section side>
+                        <q-icon name="done" color="#ecccff" />
+                      </q-item-section>
+                  </q-item>
+                </q-list>
+              </q-btn-dropdown>
 
-        <q-btn-dropdown
-        split
-        rounded-borders
-        class="no-shadow"
-        no-caps
-        label="Last 30 days">
+              <div class="Charts">
+                  <!-- Last 30 Days Bar Graph -->
+                  <div id="app">
+                    <div id="chart-container">
+                      <fusioncharts
+                      :type="type"
+                      :width="width"
+                      :height="height"
+                      :dataformat="dataFormat"
+                      :dataSource="dataSource">
 
-        <!-- Last 30 days Drop Down -->
-        <q-list class="DropDown-Text">
-          <q-item clickable v-close-popup>
-              <q-item-section avatar>
-                <q-avatar icon="today" color="info" text-color="white" />
-              </q-item-section>
-              <q-item-section>
-                <q-item-label>Last 1 week</q-item-label>
-              </q-item-section>
-              <q-item-section side>
-                <q-icon name="done" color="#ecccff" />
-              </q-item-section>
-          </q-item>
+                      </fusioncharts>
+                    </div>
+                  </div>
 
-          <q-item clickable v-close-popup>
-              <q-item-section avatar>
-                <q-avatar icon="event" color="info" text-color="white" />
-              </q-item-section>
-              <q-item-section>
-                <q-item-label>Last 24 hours</q-item-label>
-              </q-item-section>
-              <q-item-section side>
-                <q-icon name="done" color="#ecccff" />
-              </q-item-section>
-          </q-item>
-        </q-list>
-      </q-btn-dropdown>
+                  <div id="Success-Rate">FusionCharts will render here</div>
 
-      <div class="Charts">
-          <!-- Last 30 Days Bar Graph -->
-          <div id="app">
-            <div id="chart-container">
-              <fusioncharts
-              :type="type"
-              :width="width"
-              :height="height"
-              :dataformat="dataFormat"
-              :dataSource="dataSource">
+                  <div id="Payment-Issues-Chart">FusionCharts will render here</div>
 
-              </fusioncharts>
-            </div>
+              </div>
+          
           </div>
 
-          <div id="Success-Rate">FusionCharts will render here</div>
 
-          <div id="Payment-Issues-Chart">FusionCharts will render here</div>
+          <!-- Chat Stats & Message Tab  -->
+          <div class="col-4">
+              <div class="q-pa-md" style="max-width: 600px">
+                <q-card>
 
+                    <q-tabs
+                      v-model="tab"
+                      dense
+                      class="text-grey"
+                      active-color="primary"
+                      indicator-color="primary"
+                      align="justify">
+
+
+
+                      <q-tab name="mails" label="Mails" />
+                      <q-tab name="alarms" label="Alarms" />
+                    </q-tabs>
+
+                    <q-separator />
+
+                  <q-tab-panels v-model="tab" animated>
+
+                    <q-tab-panel name="mails" class="q-pa-none">
+
+                        <q-splitter
+                          v-model="splitterModel"
+                          style="height: 250px">
+                          
+
+                          <template v-slot:before>
+                            <q-tabs
+                              v-model="innerTab"
+                              vertical
+                              class="text-teal"
+                            >
+                              <q-tab name="innerMails" icon="mail" label="Mails" />
+                              <q-tab name="innerAlarms" icon="alarm" label="Alarms" />
+                              <q-tab name="innerMovies" icon="movie" label="Movies" />
+                            </q-tabs>
+                          </template>
+
+                          <template v-slot:after>
+                            <q-tab-panels
+                              v-model="innerTab"
+                              animated
+                              transition-prev="slide-down"
+                              transition-next="slide-up"
+                            >
+                              <q-tab-panel name="innerMails">
+                                <div class="text-h4 q-mb-md">Mails</div>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
+                              </q-tab-panel>
+
+                              <q-tab-panel name="innerAlarms">
+                                <div class="text-h4 q-mb-md">Alarms</div>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
+                              </q-tab-panel>
+
+                              <q-tab-panel name="innerMovies">
+                                <div class="text-h4 q-mb-md">Movies</div>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
+                              </q-tab-panel>
+                            </q-tab-panels>
+                          </template>
+
+                        </q-splitter>
+                    </q-tab-panel>
+
+                    <q-tab-panel name="alarms">
+                      <div class="text-h6">Alarms</div>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </q-tab-panel>
+
+                  </q-tab-panels>
+                </q-card>
+              </div>
+
+          </div>
 
       </div>
-  </div>
 
+
+  </div>
+</div>
 
 
 
 
 </template>
+
+
 
 <script>
 
