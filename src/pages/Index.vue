@@ -1,6 +1,99 @@
 <template>
 
+  
+
   <div class="Hey-User">
+
+
+    
+
+  <div class="q-pa-md" style="max-width: 600px">
+    <q-card>
+      <q-tabs
+        v-model="tab"
+        dense
+        class="text-grey"
+        active-color="primary"
+        indicator-color="primary"
+        align="justify"
+      >
+        <q-tab name="mails" label="Mails" />
+        <q-tab name="alarms" label="Alarms" />
+        <q-tab name="movies" label="Movies" />
+      </q-tabs>
+
+      <q-separator />
+
+      <q-tab-panels v-model="tab" animated>
+        <q-tab-panel name="mails" class="q-pa-none">
+
+          <q-splitter
+            v-model="splitterModel"
+            style="height: 250px"
+          >
+
+            <template v-slot:before>
+              <q-tabs
+                v-model="innerTab"
+                vertical
+                class="text-teal"
+              >
+                <q-tab name="innerMails" icon="mail" label="Mails" />
+                <q-tab name="innerAlarms" icon="alarm" label="Alarms" />
+                <q-tab name="innerMovies" icon="movie" label="Movies" />
+              </q-tabs>
+            </template>
+
+            <template v-slot:after>
+              <q-tab-panels
+                v-model="innerTab"
+                animated
+                transition-prev="slide-down"
+                transition-next="slide-up"
+              >
+                <q-tab-panel name="innerMails">
+                  <div class="text-h4 q-mb-md">Mails</div>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
+                </q-tab-panel>
+
+                <q-tab-panel name="innerAlarms">
+                  <div class="text-h4 q-mb-md">Alarms</div>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
+                </q-tab-panel>
+
+                <q-tab-panel name="innerMovies">
+                  <div class="text-h4 q-mb-md">Movies</div>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
+                </q-tab-panel>
+              </q-tab-panels>
+            </template>
+
+          </q-splitter>
+        </q-tab-panel>
+
+        <q-tab-panel name="alarms">
+          <div class="text-h6">Alarms</div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </q-tab-panel>
+
+        <q-tab-panel name="movies">
+          <div class="text-h6">Movies</div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </q-tab-panel>
+      </q-tab-panels>
+    </q-card>
+  </div>
+
+
+
+
+
+
+
     <p style="color: #ffa14e;" id="Hey-User" > 👋 Hey User</p>
 
     <p id="Your-dummy-dashboard">Your dummy dashboard</p>
@@ -84,7 +177,7 @@ Vue.use(VueFusionCharts, FusionCharts, Column2D, FusionTheme);
 
 
 
-// Last 30 Days Chart Data
+// Last 30 Days Chart
 // A JSON Object To Store The Chart Configurations
 const chartData = [
   {
@@ -120,6 +213,19 @@ const chartData = [
     value: "30"
   }
 ];
+// Last 30 Days Chart
+// Chart Configurations
+const dataSource = {
+  chart: {
+    caption: "Countries With Most Oil Reserves [2017-18]",
+    subcaption: "In MMbbl = One Million barrels",
+    xaxisname: "Country",
+    yaxisname: "Reserves (MMbbl)",
+    numbersuffix: "K",
+    theme: "fusion"
+  },
+  data: chartData
+  };
 
 
 // Success Rate Chart Configurations
@@ -361,23 +467,6 @@ FusionCharts.ready(function() {
   }).render();
 });
 
-
-
-
-
-// Chart Configurations
-const dataSource = {
-  chart: {
-    caption: "Countries With Most Oil Reserves [2017-18]",
-    subcaption: "In MMbbl = One Million barrels",
-    xaxisname: "Country",
-    yaxisname: "Reserves (MMbbl)",
-    numbersuffix: "K",
-    theme: "fusion"
-  },
-  data: chartData
-  };
-
 export default {
   name: 'PageIndex',
     data() {
@@ -387,8 +476,15 @@ export default {
       "width": "550",
       "height": "350",
       "dataFormat": "json",
+
+      // Chat Section
+      tab: 'mails',
+      innerTab: 'innerMails',
+      splitterModel: 20,
       dataSource
     }
-  }
+  },
+
+
 }
 </script>
