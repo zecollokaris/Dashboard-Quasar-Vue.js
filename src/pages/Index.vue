@@ -197,7 +197,10 @@ Vue.use(VueFusionCharts, FusionCharts, Column2D, FusionTheme);
 
 
 
-// Last 30 Days Chart
+/* ############################################### */
+// LAST 30 DAYS CHART
+/* ############################################### */
+
 // A JSON Object To Store The Chart Configurations
 const chartData = [
   {
@@ -231,6 +234,7 @@ const chartData = [
 // Chart Configurations
 const dataSource = {
   chart: {
+    // Chart Design Config
     numbersuffix: "000",
     theme: "fusion",
     borderRadius: "45",
@@ -248,6 +252,15 @@ const dataSource = {
   };
 
 
+
+
+
+
+
+/* ############################################### */
+// SUCCESS RATE CHART
+/* ############################################### */
+
 // Success Rate Chart Configurations
 FusionCharts.ready(function() {
   var revenueChart = new FusionCharts({
@@ -258,44 +271,56 @@ FusionCharts.ready(function() {
     dataFormat: 'json',
     dataSource: {
       "chart": {
+        // Chart Design Config
         "caption": "Success Rate",
-        "subCaption": "Last year",
-        "numberPrefix": "$",
+        captionFontSize: "16px",
+        captionFontColor: "#333333",
+        captionFontBold: "1",
+        captionHorizontalPadding: "-150px",
         "bgColor": "#ffffff",
-        "startingAngle": "310",
+        "startingAngle": "180",
         "borderRadius": "45",
-        "bgColor": "#ffffff",
-            borderRadius: "45",
-    borderColor: "#969696",
-        "showLegend": "1",
-        "defaultCenterLabel": "Total revenue: $64.08K",
-        "centerLabel": "Revenue from $label: $value",
+        "borderColor": "#969696",
+        "centerLabel": "$value",
         "centerLabelBold": "1",
-        "showTooltip": "0",
-        "decimals": "0",
-        "theme": "fusion"
+        "theme": "fusion",
+        showLabels: 0,
+        showValues: 0,
+        showBorder: "1",
+        centerLabelFontSize: "18px",
+        centerLabelFont: "Montserrat",
+        defaultcenterlabel:"98%",
+        centerLabelColor: "#a6d997",
+        baseFont: "Montserrat",
+        "pieRadius": "105",
+        "doughnutRadius": "65"
+
+
       },
       "data": [{
-          "label": "Food",
-          "value": "28504"
+
+          "label": "Unsuccessful",
+          "value": "1",
+          color: "#dfeedb"
         },
         {
-          "label": "Apparels",
-          "value": "14633"
+          "label": "Successfull",
+          "value": "150",
+          color: "#a6d997"
         },
-        {
-          "label": "Electronics",
-          "value": "10507"
-        },
-        {
-          "label": "Household",
-          "value": "4910"
-        }
+
       ]
     }
   }).render();
 });
 
+
+
+
+
+/* ############################################### */
+// PAYMENT ISSUES CHART
+/* ############################################### */
 
 // Payment Issues Chart Configurations
 FusionCharts.ready(function() {
@@ -312,6 +337,9 @@ FusionCharts.ready(function() {
         "xAxisname": "Month",
         "yAxisName": "Amount (In USD)",
         "numberPrefix": "$",
+        showBorder: "1",
+        "borderRadius": "45",
+        "borderColor": "#969696",
         "divlineColor": "#999999",
         "divLineIsDashed": "1",
         "divLineDashLen": "1",
@@ -495,15 +523,15 @@ export default {
   name: 'PageIndex',
     data() {
     return {
+      // Last 30 Days Chart Config
       "type": "column2d",
       "renderAt": "chart-container",
       "width": "747",
       "height": "332",
       "dataFormat": "json",
-      "FillColor": "red",
       
 
-      // Chat Section
+      // Message Section
       tab: 'mails',
       innerTab: 'innerMails',
       splitterModel: 20,
