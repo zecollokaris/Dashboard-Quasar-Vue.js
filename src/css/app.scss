@@ -1,4 +1,13 @@
 /* #################################### */
+/* DASH BOARD CONTAINER */
+/* #################################### */
+
+// Dahsboard Height
+.q-layout--standard{
+    height: 1500px;
+}
+
+/* #################################### */
 /* SIDE BAR */
 /* #################################### */
 // Side Bar 
@@ -117,8 +126,8 @@
 /* #################################### */
 /* #################################### */
 // DASHBOARD SECTION
-// Dashboard Section Containing 
-// (Last 30days, Success Rate, Payment Issues, Messages)
+// Dashboard Section Containing Text
+// (Hey User Text, Your Dummy Text, Last 30days Drop Down)
 /* #################################### */
 
 // Hey User TEXT
@@ -149,4 +158,42 @@
     font-family: Montserrat;
     font-size: 15px;
     color: #bb6bd9;
+}
+
+/* #################################### */
+/* #################################### */
+// CHART SECTION
+// Chart Section Containing 
+// (Last 30days Chart, Success Rate Chart, Payment Issues Chart)
+/* #################################### */
+
+// Column Containing Charts.
+.column1{
+    float: left;
+    width: 70%;
+}
+
+// Column Containg Messages and Stats
+.column2{
+    float: right;
+    width: 30%;
+}
+
+#Success-Rate {
+    width: 50%;
+    float: left;
+  }
+#Payment-Issues-Chart {
+    width: 50%;
+    float: left;
+}
+
+g.raphael-group-63-plot-group{
+    width: 79px;
+
+}
+
+
+.Days-Chart{
+    margin-top: 24px;
 }

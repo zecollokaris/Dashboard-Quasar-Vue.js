@@ -7,12 +7,16 @@
 
       <div class="Hey-User">
 
-          <div class="col-8">
-
+          <div class="column1">
+              <!-- 👋 Het User Text -->
               <p style="color: #ffa14e;" id="Hey-User" > 👋 Hey User</p>
 
+              <!-- Your Dummy Dahsboard Text -->
               <p id="Your-dummy-dashboard">Your dummy dashboard</p>
 
+
+
+              <!-- Last 30 Days Drop Down  -->
               <q-btn-dropdown
                 split
                 rounded-borders
@@ -48,9 +52,11 @@
                 </q-list>
               </q-btn-dropdown>
 
+
+              <!-- Chart Container Section -->
               <div class="Charts">
                   <!-- Last 30 Days Bar Graph -->
-                  <div id="app">
+                  <div class="Days-Chart">
                     <div id="chart-container">
                       <fusioncharts
                       :type="type"
@@ -63,9 +69,16 @@
                     </div>
                   </div>
 
-                  <div id="Success-Rate">FusionCharts will render here</div>
+                  <!-- Chat Section Containing Success Rate & Payment Issues -->
+                  <div class="Charts-2">
 
-                  <div id="Payment-Issues-Chart">FusionCharts will render here</div>
+                    <!-- Success Rate Chart -->
+                    <div id="Success-Rate">Charts will render here</div>
+
+                    <!-- Payment Issues Chart -->
+                    <div id="Payment-Issues-Chart">Charts will render here</div>
+
+                  </div>
 
               </div>
           
@@ -73,7 +86,7 @@
 
 
           <!-- Chat Stats & Message Tab  -->
-          <div class="col-4">
+          <div class="column2">
               <div class="q-pa-md" style="max-width: 600px">
                 <q-card>
 
@@ -188,48 +201,48 @@ Vue.use(VueFusionCharts, FusionCharts, Column2D, FusionTheme);
 // A JSON Object To Store The Chart Configurations
 const chartData = [
   {
-    label: "Venezuela",
-    value: "290"
+    label: "Mar 1-7",
+    value: "50",
+    color: "#ecccff",
+    plotSpacePercent: "95",
   },
   {
-    label: "Saudi",
-    value: "260"
+    label: "Mar 8-14",
+    value: "125",
+    color: "#ecccff"
   },
   {
-    label: "Canada",
-    value: "180"
+    label: "Mar 15-21",
+    value: "125",
+    color: "#ecccff"
   },
   {
-    label: "Iran",
-    value: "140"
+    label: "Mar 22-28",
+    value: "125",
+    color: "#ecccff"
   },
   {
-    label: "Russia",
-    value: "115"
-  },
-  {
-    label: "UAE",
-    value: "100"
-  },
-  {
-    label: "US",
-    value: "30"
-  },
-  {
-    label: "China",
-    value: "30"
+    label: "Final wk",
+    value: "190",
+    color: "#ecccff"
   }
 ];
 // Last 30 Days Chart
 // Chart Configurations
 const dataSource = {
   chart: {
-    caption: "Countries With Most Oil Reserves [2017-18]",
-    subcaption: "In MMbbl = One Million barrels",
-    xaxisname: "Country",
-    yaxisname: "Reserves (MMbbl)",
-    numbersuffix: "K",
-    theme: "fusion"
+    numbersuffix: "000",
+    theme: "fusion",
+    borderRadius: "45",
+    borderColor: "#969696",
+    taskBarBorderRadius: "65",
+    showBorder: "1",
+    chartTopMargin: "44",
+    chartBottomMargin: "36",
+    baseFont: "Montserrat",
+    "baseFontSize": "14",
+    
+    
   },
   data: chartData
   };
@@ -240,16 +253,20 @@ FusionCharts.ready(function() {
   var revenueChart = new FusionCharts({
     type: 'doughnut2d',
     renderAt: 'Success-Rate',
-    width: '550',
-    height: '450',
+    width: '344',
+    height: '364',
     dataFormat: 'json',
     dataSource: {
       "chart": {
-        "caption": "Split of Revenue by Product Categories",
+        "caption": "Success Rate",
         "subCaption": "Last year",
         "numberPrefix": "$",
         "bgColor": "#ffffff",
         "startingAngle": "310",
+        "borderRadius": "45",
+        "bgColor": "#ffffff",
+            borderRadius: "45",
+    borderColor: "#969696",
         "showLegend": "1",
         "defaultCenterLabel": "Total revenue: $64.08K",
         "centerLabel": "Revenue from $label: $value",
@@ -480,9 +497,11 @@ export default {
     return {
       "type": "column2d",
       "renderAt": "chart-container",
-      "width": "550",
-      "height": "350",
+      "width": "747",
+      "height": "332",
       "dataFormat": "json",
+      "FillColor": "red",
+      
 
       // Chat Section
       tab: 'mails',
