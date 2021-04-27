@@ -120,7 +120,7 @@
     position: absolute;
     width: 39px;
     height: 22px;
-    margin-left: 460px;
+    margin-left: 35.5%;
     margin-top: -40px;
 }
 
@@ -128,7 +128,7 @@
 .Live{
     position: absolute;
     flex-grow: 0;
-    margin-left: 525px;
+    margin-left: 40%;
     margin-top: -40px;
     font-family: Montserrat;
     font-size: 16px;
@@ -136,9 +136,57 @@
     color: #828282;
 }
 
+.Language-Selector{
+    position: absolute;
+    width: 166px;
+    height: 50px;
+    margin-left: 45%;
+    margin-top: -55px;
+    font-family: Montserrat;
+    font-size: 16px;
+    letter-spacing: -0.48px;
+    box-shadow: none;
+    color: #828282;
+    border: 1px solid #e0e0e0;
+}
 
+.Notification{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    margin-left: 65%;
+    margin-top: -47px;
+    font-family: Montserrat;
+    font-size: 16px;
+    letter-spacing: -0.48px;
+    background-color: #faf2ff;
+}
 
+.Notification-Alert{
+    position: absolute;
+    margin-left: 67%;
+    margin-top: -65px;
+    font-family: Montserrat;
+    font-size: 26px;
+    color: red;
+}
 
+.User{
+    height: 50px;
+    width: 235px;
+    position: absolute;
+    margin-left: 75%;
+    margin-top: -50px;
+    font-family: Montserrat;
+    font-size: 16px;
+    letter-spacing: -0.48px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+}
+.User-Image{
+    width: 45px;
+    height: 45px;
+}
 
 
 

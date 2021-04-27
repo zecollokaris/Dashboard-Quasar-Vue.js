@@ -30,13 +30,54 @@
                       <q-toggle
                         class="Toggle"
                         v-model="value"
-                        color="green"
-                      />
+                        color="green"/>
+
 
                       <!-- Live -->
                       <p class="Live">Live</p>
 
-                       
+
+                      <!-- Language Selector -->
+                      <q-btn-dropdown class="Language-Selector" rounded no-caps label="English" dropdown-icon="change_history">
+                        <q-list>
+                          <q-item clickable v-close-popup @click="onItemClick">
+
+                            <q-item-section avatar>
+                              <q-avatar style="font-size: 35px;" icon="record_voice_over " text-color="black" />
+                            </q-item-section>
+
+                            <q-item-section>
+                              <q-item-label>Français</q-item-label>
+                            </q-item-section>
+                          </q-item>
+
+                          <q-item clickable v-close-popup @click="onItemClick">
+                            <q-item-section>
+                              <q-item-label>Española</q-item-label>
+                            </q-item-section>
+                          </q-item>
+
+                          <q-item clickable v-close-popup @click="onItemClick">
+                            <q-item-section>
+                              <q-item-label>Latino-Faliscan</q-item-label>
+                            </q-item-section>
+                          </q-item>
+                        </q-list>
+                      </q-btn-dropdown>
+                      <!-- Collapse Language Selector -->
+
+                      <!-- Notification Bell -->
+                      <q-btn flat class="Notification" rounded-borders icon="circle_notifications" />
+                      <p class="Notification-Alert">○</p>
+
+
+                      <q-chip class="User" square>
+                        <q-avatar class="User-Image">
+                          <img src="https://lh3.googleusercontent.com/-3kYQFYF2dd4/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucmZAudpbrUg5jANwmcErD5lrjnTqA/photo.jpg?sz=46">
+                        </q-avatar>
+                        <p>User Name</p>
+                        <p>test</p>
+                      </q-chip>
 
                   </q-toolbar-title>
                   <q-btn
@@ -226,6 +267,14 @@ export default {
     isValid () {
       return this.model.length <= 3
     }
+  },
+
+  methods: {
+    onItemClick () {
+      // console.log('Clicked on an Item')
+    }
   }
+
+
 }
 </script>
