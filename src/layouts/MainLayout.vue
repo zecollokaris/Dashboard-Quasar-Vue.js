@@ -1,17 +1,43 @@
 <template>
     <q-layout view="lHh lpr lFf" class="shadow-2 rounded-borders">
 
-              <q-header class="bg-white text-primary">
+              <q-header bordered class="bg-white text-primary">
                 <!-- MENU BAR -->
                 <!-- Menu Bar Containing (Search, Live, Language Menu, Notificaton & User) -->
                 <q-toolbar class="Navigation-Menu">
                   
                   <q-toolbar-title>
 
-                    <q-avatar>
-                      <img src="https://cdn.quasar.dev/logo/svg/quasar-logo.svg">
-                    </q-avatar>
-                    Quasar Framework
+                      <!-- Search Input -->
+                      <div class="Search-Input" style="max-width: 440px; max-height: 56px;">
+                        <q-input
+                          rounded standout="bg-teal text-white"
+                          v-model="model"
+                          label="Search"
+                          bottom-slots
+                          clear-icon="visible"
+                          :error="!isValid">
+
+                          <template v-slot:prepend>
+                           <q-icon name="search" />
+                          </template>
+                        </q-input>
+                        
+                      </div>
+                      <!-- Collapse Search Input -->
+
+                      <!-- Toggle Switch -->
+                      <q-toggle
+                        class="Toggle"
+                        v-model="value"
+                        color="green"
+                      />
+
+                      <!-- Live -->
+                      <p class="Live">Live</p>
+
+                       
+
                   </q-toolbar-title>
                   <q-btn
                     flat
@@ -189,7 +215,16 @@ export default {
     return {
       leftDrawerOpen: false,
       essentialLinks: linksData,
-      tab: 'images'
+      tab: 'images',
+      model: '',
+      value: true
+    }
+  },
+
+  // Search Input
+  computed: {
+    isValid () {
+      return this.model.length <= 3
     }
   }
 }
