@@ -4,7 +4,7 @@
 
 // Dahsboard Height
 .q-layout--standard{
-    height: 1500px;
+    height: 1100px;
 }
 
 /* #################################### */
@@ -175,27 +175,112 @@
 
 // Column Containg Messages and Stats
 .column2{
-    float: right;
-    width: 30%;
+    position: absolute;
+    right: 0px;
 }
 
+
+
+// Success Rate Chart
 #Success-Rate {
     width: 50%;
     float: left;
     margin-top: 56px;
-  }
+}
+
+// Payment ssues Chart
 #Payment-Issues-Chart {
-    width: 50%;
-    float: left;
+    width: 20%;
+    float: right;
     margin-top: 56px;
 }
 
-g.raphael-group-63-plot-group{
-    width: 79px;
-
+// 30 Days Chat Section
+.Days-Chart{
+    margin-top: 34px;
 }
 
+/* #################################### */
+/* #################################### */
+// STATS MESSAGE & SECTION
+// Chat Section Containing 
+// (Stats & Messages Section)
+/* #################################### */
 
-.Days-Chart{
-    margin-top: 24px;
+// Chat Container Section
+.Chat{
+    background-color: #f9f9f9;
+    border-top-left-radius: 50px;
+    margin-left: 10%;
+}
+
+.Chat-Menu{
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.LineChat{
+    position: absolute;
+    width: 200px;
+    margin: 0 0px -67px 40px;
+    border: 1px solid #e0e0e0;
+    margin-top: -17px;
+}
+
+// Message Section Container
+.Bubble{
+    background-color: #f9f9f9;
+}
+
+// Message Section
+.Bubble-Card{
+    height: 130px;
+    border-radius: 20px;
+    margin-top: -5px;
+}
+
+// Name of Message Secder Inside Card Section
+#James-Robinson {
+    width: 150px;
+    height: 15px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: normal;
+    text-align: left;
+    color: #333333;
+    margin-top: 20px;
+}
+
+// Message Date Inside Message Section
+#Bubble-Date {
+    width: 80px;
+    height: 10px;
+    margin: 14px 0 27px 123px;
+    margin-top: -75px;
+    font-family: Montserrat;
+    font-size: 8px;
+    line-height: normal;
+    text-align: right;
+    color: #bdbdbd;
+}
+
+// Text Message Text In Message Section
+#Text-Message{
+    width: 150px;
+    height: 12px;
+    font-family: Montserrat;
+    font-size: 10px;
+    letter-spacing: normal;
+    margin-top: 50px;
+    color: #bdbdbd;
+}
+
+// View Tick In Message Section
+#Text-Vector {
+    width: 5px;
+    height: 10px;
+    width: 20px;
+    height: 20px;
+    margin: 14px 0 27px 160px;
+    margin-top: -60px;
 }

@@ -87,89 +87,253 @@
 
           <!-- Chat Stats & Message Tab  -->
           <div class="column2">
-              <div class="q-pa-md" style="max-width: 600px">
-                <q-card>
 
+                <div class="Chat">
+
+                  <div class="Chat-Section">
+
+                    <!-- Stats & Mesaage Slider Tab  -->
                     <q-tabs
-                      v-model="tab"
-                      dense
-                      class="text-grey"
-                      active-color="primary"
-                      indicator-color="primary"
-                      align="justify">
+                        v-model="tab"
+                        align="justify"
+                        narrow-indicator
+                        class="Chat-Menu">
+                        <q-tab name="mails" label="Stats" />
+                        <q-tab name="alarms" label="Messages" />
 
-
-
-                      <q-tab name="mails" label="Mails" />
-                      <q-tab name="alarms" label="Alarms" />
+                        <div class="LineChat"></div>
+                        
                     </q-tabs>
 
-                    <q-separator />
+                    <!-- Message & Stats Container Containing Messages -->
+                    <div class="Bubble-Container">
+                      
 
-                  <q-tab-panels v-model="tab" animated>
-
-                    <q-tab-panel name="mails" class="q-pa-none">
-
-                        <q-splitter
-                          v-model="splitterModel"
-                          style="height: 250px">
+                      <!-- TAB PANEL -->
+                      <q-tab-panels
+                          v-model="tab"
+                          animated
+                          transition-prev="scale"
+                          transition-next="jump-down"
+                          class="Bubble">
                           
+                          <!-- Messages Card -->
+                          <!-- Message Card Containing Message Display -->
+                          <q-tab-panel class="Bubble-Card" name="mails">
+                              <div class="q-pa-md">
+                                <div class="q-gutter-md row items-start">
+                                  <q-card class="Bubble-Card" flat bordered v-for="type in skeletonTypes" :key="type" style="width: 250px">
 
-                          <template v-slot:before>
-                            <q-tabs
-                              v-model="innerTab"
-                              vertical
-                              class="text-teal"
-                            >
-                              <q-tab name="innerMails" icon="mail" label="Mails" />
-                              <q-tab name="innerAlarms" icon="alarm" label="Alarms" />
-                              <q-tab name="innerMovies" icon="movie" label="Movies" />
-                            </q-tabs>
-                          </template>
 
-                          <template v-slot:after>
-                            <q-tab-panels
-                              v-model="innerTab"
-                              animated
-                              transition-prev="slide-down"
-                              transition-next="slide-up"
-                            >
-                              <q-tab-panel name="innerMails">
-                                <div class="text-h4 q-mb-md">Mails</div>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
-                              </q-tab-panel>
+                                    <q-card-section>
+                                      <q-skeleton  style="width: 35px; height: 35px; background-color: #72c8cc;" :type="type" />
+                                      <p id="James-Robinson">James Robinson</p>
+                                      <p id="Bubble-Date">Jan 2, 12:31am</p>
+                                      <p id="Text-Message">I need some maintenac...</p>
+                                      <q-icon id="Text-Vector" name="done_all" />
+                                    </q-card-section>
+                                  </q-card>
+                                </div>
+                              </div>
+                          </q-tab-panel>
 
-                              <q-tab-panel name="innerAlarms">
-                                <div class="text-h4 q-mb-md">Alarms</div>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
-                              </q-tab-panel>
 
-                              <q-tab-panel name="innerMovies">
-                                <div class="text-h4 q-mb-md">Movies</div>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero.</p>
-                              </q-tab-panel>
-                            </q-tab-panels>
-                          </template>
 
-                        </q-splitter>
-                    </q-tab-panel>
+                          <!-- Messages Card -->
+                          <!-- Message Card Containing Message Display -->
+                          <q-tab-panel class="Bubble-Card" name="alarms">
+                              <div class="q-pa-md">
+                                <div class="q-gutter-md row items-start">
+                                  <q-card class="Bubble-Card" flat bordered v-for="type in skeletonTypes" :key="type" style="width: 250px">
 
-                    <q-tab-panel name="alarms">
-                      <div class="text-h6">Alarms</div>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </q-tab-panel>
 
-                  </q-tab-panels>
-                </q-card>
-              </div>
+                                    <q-card-section>
+                                      <q-skeleton  style="width: 35px; height: 35px; background-color: #72c8cc;" :type="type" />
+                                      <p id="James-Robinson">James Robinson</p>
+                                      <p id="Bubble-Date">Jan 2, 12:31am</p>
+                                      <p id="Text-Message">I need some maintenac...</p>
+                                      <q-icon id="Text-Vector" name="done_all" />
+                                    </q-card-section>
+                                  </q-card>
+                                </div>
+                              </div>
+                          </q-tab-panel>
 
+                      </q-tab-panels>
+
+
+
+
+                      <!-- TAB PANEL -->
+                      <q-tab-panels
+                          v-model="tab"
+                          animated
+                          transition-prev="jump-up"
+                          transition-next="scale"
+                          class="Bubble">
+
+                          
+                          
+                          <!-- Messages Card -->
+                          <!-- Message Card Containing Message Display -->
+                          <q-tab-panel class="Bubble-Card" name="mails">
+                              <div class="q-pa-md">
+                                <div class="q-gutter-md row items-start">
+                                  <q-card class="Bubble-Card" flat bordered v-for="type in skeletonTypes" :key="type" style="width: 250px">
+
+
+                                    <q-card-section>
+                                      <q-skeleton  style="width: 35px; height: 35px; background-color: #8e4b6e;" :type="type" />
+                                      <p id="James-Robinson">Eseosa Igbinobaro</p>
+                                      <p id="Bubble-Date">Wed 3, 06:00pm</p>
+                                      <p id="Text-Message">I got your email ad and...</p>
+                                      <q-icon id="Text-Vector" name="done_all" />
+                                    </q-card-section>
+                                  </q-card>
+                                </div>
+                              </div>
+                          </q-tab-panel>
+
+
+
+                          <!-- Messages Card -->
+                          <!-- Message Card Containing Message Display -->
+                          <q-tab-panel class="Bubble-Card" name="alarms">
+                              <div class="q-pa-md">
+                                <div class="q-gutter-md row items-start">
+                                  <q-card class="Bubble-Card" flat bordered v-for="type in skeletonTypes" :key="type" style="width: 250px">
+
+
+                                    <q-card-section>
+                                      <q-skeleton  style="width: 35px; height: 35px; background-color: #8e4b6e;" :type="type" />
+                                      <p id="James-Robinson">Eseosa Igbinobaro</p>
+                                      <p id="Bubble-Date">Wed 3, 06:00pm</p>
+                                      <p id="Text-Message">I got your email ad and...</p>
+                                      <q-icon id="Text-Vector" name="done_all" />
+                                    </q-card-section>
+                                  </q-card>
+                                </div>
+                              </div>
+                          </q-tab-panel>
+
+                      </q-tab-panels>
+
+
+                      <!-- TAB PANEL -->
+                      <q-tab-panels
+                          v-model="tab"
+                          animated
+                          transition-prev="scale"
+                          transition-next="jump-down"
+                          class="Bubble">
+                          
+                          <!-- Messages Card -->
+                          <!-- Message Card Containing Message Display -->
+                          <q-tab-panel class="Bubble-Card" name="mails">
+                              <div class="q-pa-md">
+                                <div class="q-gutter-md row items-start">
+                                  <q-card class="Bubble-Card" flat bordered v-for="type in skeletonTypes" :key="type" style="width: 250px">
+
+
+                                    <q-card-section>
+                                      <q-skeleton  style="width: 35px; height: 35px; background-color: #72c8cc;" :type="type" />
+                                      <p id="James-Robinson">James Robinson</p>
+                                      <p id="Bubble-Date">Jan 2, 12:31am</p>
+                                      <p id="Text-Message">I need some maintenac...</p>
+                                      <q-icon id="Text-Vector" name="done_all" />
+                                    </q-card-section>
+                                  </q-card>
+                                </div>
+                              </div>
+                          </q-tab-panel>
+
+
+                          <!-- Messages Card -->
+                          <!-- Message Card Containing Message Display -->
+                          <q-tab-panel class="Bubble-Card" name="alarms">
+                              <div class="q-pa-md">
+                                <div class="q-gutter-md row items-start">
+                                  <q-card class="Bubble-Card" flat bordered v-for="type in skeletonTypes" :key="type" style="width: 250px">
+
+
+                                    <q-card-section>
+                                      <q-skeleton  style="width: 35px; height: 35px; background-color: #72c8cc;" :type="type" />
+                                      <p id="James-Robinson">James Robinson</p>
+                                      <p id="Bubble-Date">Jan 2, 12:31am</p>
+                                      <p id="Text-Message">I need some maintenac...</p>
+                                      <q-icon id="Text-Vector" name="done_all" />
+                                    </q-card-section>
+                                  </q-card>
+                                </div>
+                              </div>
+                          </q-tab-panel>
+
+                      </q-tab-panels>
+
+
+
+                      <!-- TAB PANEL -->
+                      <q-tab-panels
+                          v-model="tab"
+                          animated
+                          transition-prev="jump-up"
+                          transition-next="scale"
+                          class="Bubble">
+                          
+                          <!-- Messages Card -->
+                          <!-- Message Card Containing Message Display -->
+                          <q-tab-panel class="Bubble-Card" name="mails">
+                              <div class="q-pa-md">
+                                <div class="q-gutter-md row items-start">
+                                  <q-card class="Bubble-Card" flat bordered v-for="type in skeletonTypes" :key="type" style="width: 250px">
+
+
+                                    <q-card-section>
+                                      <q-skeleton  style="width: 35px; height: 35px; background-color: #ffbb4f;" :type="type" />
+                                      <p id="James-Robinson">Lupita Jonah</p>
+                                      <p id="Bubble-Date">Jan 2, 12:31am</p>
+                                      <p id="Text-Message">Thank you so much for...</p>
+                                      <q-icon id="Text-Vector" name="done_all" />
+                                    </q-card-section>
+                                  </q-card>
+                                </div>
+                              </div>
+                          </q-tab-panel>
+
+
+
+                          <!-- Messages Card -->
+                          <!-- Message Card Containing Message Display -->
+                          <q-tab-panel class="Bubble-Card" name="alarms">
+                              <div class="q-pa-md">
+                                <div class="q-gutter-md row items-start">
+                                  <q-card class="Bubble-Card" flat bordered v-for="type in skeletonTypes" :key="type" style="width: 250px">
+
+
+                                    <q-card-section>
+                                      <q-skeleton  style="width: 35px; height: 35px; background-color: #ffbb4f;" :type="type" />
+                                      <p id="James-Robinson">Lupita Jonah</p>
+                                      <p id="Bubble-Date">Feb 13, 06:15pm</p>
+                                      <p id="Text-Message">Thank you so much for...</p>
+                                      <q-icon id="Text-Vector" name="done_all" />
+                                    </q-card-section>
+                                  </q-card>
+                                </div>
+                              </div>
+                          </q-tab-panel>
+
+                      </q-tab-panels>
+
+                    </div>
+
+                  </div>
+
+                </div>
           </div>
 
       </div>
+
+      
 
 
   </div>
@@ -235,6 +399,9 @@ const chartData = [
 const dataSource = {
   chart: {
     // Chart Design Config
+    "chartLeftMargin": "55",
+    "chartTopMargin": "44",
+    "chartRightMargin": "50",
     numbersuffix: "000",
     theme: "fusion",
     borderRadius: "45",
@@ -245,6 +412,9 @@ const dataSource = {
     chartBottomMargin: "36",
     baseFont: "Montserrat",
     "baseFontSize": "14",
+    "divLineDashed": "1",
+    "divLineDashLen": "10",
+    "divLineDashGap": "6"
     
     
   },
@@ -266,8 +436,8 @@ FusionCharts.ready(function() {
   var revenueChart = new FusionCharts({
     type: 'doughnut2d',
     renderAt: 'Success-Rate',
-    width: '344',
-    height: '364',
+    width: '324',
+    height: '354',
     dataFormat: 'json',
     dataSource: {
       "chart": {
@@ -293,7 +463,9 @@ FusionCharts.ready(function() {
         centerLabelColor: "#a6d997",
         baseFont: "Montserrat",
         "pieRadius": "105",
-        "doughnutRadius": "65"
+        "doughnutRadius": "65",
+        "legendItemFontSize": "12",
+        
 
 
       },
@@ -324,193 +496,131 @@ FusionCharts.ready(function() {
 
 // Payment Issues Chart Configurations
 FusionCharts.ready(function() {
-  var salesAnlysisChart = new FusionCharts({
-    type: 'mscombi2d',
+  var revenueChart = new FusionCharts({
+    type: 'stackedcolumn2d',
     renderAt: 'Payment-Issues-Chart',
-    width: '700',
-    height: '400',
+    width: '324',
+    height: '354',
     dataFormat: 'json',
     dataSource: {
       "chart": {
-        "caption": "Harry's SuperMart",
-        "subCaption": "Sales analysis of last year",
-        "xAxisname": "Month",
-        "yAxisName": "Amount (In USD)",
-        "numberPrefix": "$",
+        "theme": "fusion",
+        "caption": "Payment Issues",
+        "chartBottomMargin": "20",
+        "chartRightMargin": "40",
+        captionFontSize: "16px",
+        baseFont: "Montserrat",
+        //Showing the Cumulative Sum of stacked data
+        "showSum": "1",
         showBorder: "1",
         "borderRadius": "45",
         "borderColor": "#969696",
-        "divlineColor": "#999999",
-        "divLineIsDashed": "1",
-        "divLineDashLen": "1",
-        "divLineGapLen": "1",
-        "toolTipColor": "#ffffff",
-        "toolTipBorderThickness": "0",
-        "toolTipBgColor": "#000000",
-        "toolTipBgAlpha": "80",
-        "toolTipBorderRadius": "2",
-        "toolTipPadding": "5",
-        "theme": "fusion"
+        dashGap: "150px",
+        "legendPosition": "bottom-left",
+        "legendCaption": "Total number of errors: 19",
+        "legendCaptionBold": "1",
+        "legendCaptionFontSize": "14",
+        "legendCaptionFontColor": "#ffa14e",
+        "legendItemFontSize": "12",
+        "legendItemFont": "Montserrat",
+        "yAxisValueFontColor": "#ffffff",
+        "divLineColor": "#ffffff",
+
       },
       "categories": [{
         "category": [{
-            "label": "Jan"
+            "label": "a",
+            color: "#bdbdbd",
+            fontsize: "12px"
           },
           {
-            "label": "Feb"
+            "label": "x",
+            color: "#bdbdbd",
+            fontsize: "12px"
           },
           {
-            "label": "Mar"
+            "label": "o",
+            color: "#bdbdbd",
+            fontsize: "12px"
           },
           {
-            "label": "Apr"
-          },
-          {
-            "label": "May"
-          },
-          {
-            "label": "Jun"
-          },
-          {
-            "label": "Jul"
-          },
-          {
-            "label": "Aug"
-          },
-          {
-            "label": "Sep"
-          },
-          {
-            "label": "Oct"
-          },
-          {
-            "label": "Nov"
-          },
-          {
-            "label": "Dec"
+            "label": "n",
+            color: "#bdbdbd",
+            fontsize: "12px"
           }
         ]
       }],
       "dataset": [{
-          "seriesName": "Actual Revenue",
-          "showValues": "1",
+          "seriesname": "Customer errors",
+          color: "#ffbb4f",
           "data": [{
-              "value": "16000"
+              "value": "1",
+              color: "#ffbb4f"
             },
             {
-              "value": "20000"
+              "value": "0",
+              color: "#ffffff"
             },
             {
-              "value": "18000"
+              "value": "0",
+              color: "#ffffff"
             },
             {
-              "value": "19000"
-            },
-            {
-              "value": "15000"
-            },
-            {
-              "value": "21000"
-            },
-            {
-              "value": "16000"
-            },
-            {
-              "value": "20000"
-            },
-            {
-              "value": "17000"
-            },
-            {
-              "value": "25000"
-            },
-            {
-              "value": "19000"
-            },
-            {
-              "value": "23000"
+              "value": "0",
+              color: "#ffffff"
             }
           ]
         },
         {
-          "seriesName": "Projected Revenue",
-          "renderAs": "line",
+          "seriesname": "Fraud blocks",
+          color: "#ffda93",
           "data": [{
-              "value": "15000"
+              "value": "0"
             },
             {
-              "value": "16000"
+              "value": "5",
+              color: "#ffda93"
             },
             {
-              "value": "17000"
+              "value": "0"
             },
             {
-              "value": "18000"
-            },
-            {
-              "value": "19000"
-            },
-            {
-              "value": "19000"
-            },
-            {
-              "value": "19000"
-            },
-            {
-              "value": "19000"
-            },
-            {
-              "value": "20000"
-            },
-            {
-              "value": "21000"
-            },
-            {
-              "value": "22000"
-            },
-            {
-              "value": "23000"
+              "value": "0"
             }
           ]
         },
         {
-          "seriesName": "Profit",
-          "renderAs": "area",
+          "seriesname": "Bank errors",
           "data": [{
-              "value": "4000"
+              "value": "0"
             },
             {
-              "value": "5000"
+              "value": "0"
             },
             {
-              "value": "3000"
+              "value": "3",
+              color: "#ff7576"
             },
             {
-              "value": "4000"
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "seriesname": "System errors",
+          color: "#80e0e5",
+          "data": [{
+              "value": "0"
             },
             {
-              "value": "1000"
+              "value": "0"
             },
             {
-              "value": "7000"
+              "value": "0"
             },
             {
-              "value": "1000"
-            },
-            {
-              "value": "4000"
-            },
-            {
-              "value": "1000"
-            },
-            {
-              "value": "8000"
-            },
-            {
-              "value": "2000"
-            },
-            {
-              "value": "7000"
+              "value": "10",
+              color: "#80e0e5"
             }
           ]
         }
@@ -518,6 +628,11 @@ FusionCharts.ready(function() {
     }
   }).render();
 });
+
+
+
+
+
 
 export default {
   name: 'PageIndex',
@@ -535,7 +650,12 @@ export default {
       tab: 'mails',
       innerTab: 'innerMails',
       splitterModel: 20,
-      dataSource
+      dataSource,
+
+      // Message Card
+      skeletonTypes: [
+         'QToggle'
+      ]
     }
   },
 
