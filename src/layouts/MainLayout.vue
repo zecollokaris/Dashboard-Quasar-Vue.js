@@ -73,10 +73,10 @@
 
                       <q-chip class="User" square>
                         <q-avatar class="User-Image">
-                          <img src="https://lh3.googleusercontent.com/-3kYQFYF2dd4/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucmZAudpbrUg5jANwmcErD5lrjnTqA/photo.jpg?sz=46">
+                          <img class="U-Image" src="https://lh3.googleusercontent.com/-3kYQFYF2dd4/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucmZAudpbrUg5jANwmcErD5lrjnTqA/photo.jpg?sz=46">
                         </q-avatar>
-                        <p>User Name</p>
-                        <p>test</p>
+                        <p class="User-Name">User Name</p>
+                        <p class="User-Id">test</p>
                       </q-chip>
 
                   </q-toolbar-title>

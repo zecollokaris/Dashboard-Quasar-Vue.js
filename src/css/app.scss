@@ -136,6 +136,7 @@
     color: #828282;
 }
 
+// Language Selector
 .Language-Selector{
     position: absolute;
     width: 166px;
@@ -150,6 +151,7 @@
     border: 1px solid #e0e0e0;
 }
 
+// Notification Container.
 .Notification{
     position: absolute;
     width: 40px;
@@ -162,6 +164,7 @@
     background-color: #faf2ff;
 }
 
+// Notification Alert Pop Up
 .Notification-Alert{
     position: absolute;
     margin-left: 67%;
@@ -171,6 +174,10 @@
     color: red;
 }
 
+
+// User Section.
+// User Section Containing
+// User-Image, User-Name
 .User{
     height: 50px;
     width: 235px;
@@ -183,12 +190,39 @@
     background-color: #ffffff;
     border: 1px solid #e0e0e0;
 }
+
+// User Image That Will Contain User Profile Pic
 .User-Image{
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
+}
+.U-Image{
+    margin-right: -5px;
 }
 
+// User Name Section That will Contain User Info
+.User-Name{
+    width: 90px;
+    height: 15px;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #828282;
+}
 
+.User-Id{
+    width: 90px;
+    height: 15px;
+    margin: 20px 0 0 0;
+    margin-left: -90px;
+    font-family: Montserrat;
+    font-size: 12px;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #bdbdbd;
+}
 
 /* #################################### */
 /* #################################### */
