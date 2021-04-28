@@ -4,7 +4,7 @@
 
 # DESCRIPTION
 
-A One Page Web-based Application Developed Using Quasar VueJs Framework used to Display and Hold Application Data.
+A **Single Page Web-based Application** Developed Using **Quasar VueJs Framework** used to Display and Hold Application Data.
 
 
 # DISPLAY
@@ -18,11 +18,13 @@ A One Page Web-based Application Developed Using Quasar VueJs Framework used to 
 ## Landing Page Page
 
 <p align="center">
-<img align="centre" src="Spec.md/login.png" alt="Login Page" />
+<img align="centre" src="Spec.md/landing1.png" alt="Login Page" />
 <p>
 
+## Landing Page Page Scroll
+
 <p align="center">
-<img align="centre" src="Spec.md/reset.png" alt="Reset Password Page" />
+<img align="centre" src="Spec.md/Landing2.png" alt="Reset Password Page" />
 <p>
 
 ## Mobile Display
@@ -102,7 +104,7 @@ quasar dev
 
 
 
-6. [Incase of Errors When Starting the Server](https://quasar.dev/introduction-to-quasar)
+**6. [Incase of Errors When Starting the Server](https://quasar.dev/introduction-to-quasar)**
 
 - Everything should worked after the process but **incase of error when raning the server Deleted ```node_modules``` folder and ran ```npm install```** After that, quasar dev should ran ok. **Incase of another error reffer from the Quasar Documentation**
 
@@ -130,13 +132,15 @@ npm install
 
 **1. HTML**
 
-**2. CSS**
+**2. SSS**
 
-**3. Fusion Chart Charting Library**
+**3. JavaScript**
 
-**4. Quasar FrameWork**
+**4. Fusion Chart Charting Library**
 
-**5. **Vue.js**
+**5. Quasar FrameWork**
+
+**6. Vue.js**
 
 **6. Adobe Photoshop**
 
@@ -146,7 +150,7 @@ npm install
 
 [:blush: My Repository](https://github.com/zecollokaris?tab=repositories)
 
-** I would Recommend** 
+**I would Recommend** 
 
 **1. [CryptoByte](https://github.com/zecollokaris/CryptoByte-Blockchain-Android)**
 
