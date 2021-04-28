@@ -12,7 +12,11 @@ A **Single Page Web-based Application** Developed Using **Quasar VueJs Framework
 ## Display Video
 
 <p align="center">
-<img align="centre" src="https://user-images.githubusercontent.com/36197725/116420630-d20a4e80-a846-11eb-81d3-d4edf075be0c.mp4" alt="Login Page" />
+<img align="centre" src="https://user-images.githubusercontent.com/36197725/116420630-d20a4e80-a846-11eb-81d3-d4edf075be0c.mp4" alt="Landing Page" />
+<p>
+
+<p align="center">
+<img width="250" src="https://user-images.githubusercontent.com/36197725/49332791-9a8b0f80-f5c4-11e8-86b5-fa2171734d7b.gif" alt="Cryptobyte logo" />
 <p>
 
 ## Landing Page Page
