@@ -12,7 +12,7 @@ A **Single Page Web-based Application** Developed Using **Quasar VueJs Framework
 ## Display Video
 
 <p align="center">
-<img align="centre" src="Spec.md/admin.png" alt="Admin Page" />
+<img width="250" src="https://user-images.githubusercontent.com/36197725/49332791-9a8b0f80-f5c4-11e8-86b5-fa2171734d7b.gif" alt="Cryptobyte logo" />
 <p>
 
 ## Landing Page Page
@@ -26,19 +26,6 @@ A **Single Page Web-based Application** Developed Using **Quasar VueJs Framework
 <p align="center">
 <img align="centre" src="Spec.md/Landing2.png" alt="Reset Password Page" />
 <p>
-
-## Mobile Display
-
-<p align="center">
-<img align="centre" src="Spec.md/reset.png" alt="Reset Password Page" />
-<p>
-
-## Tablet Display
-
-<p align="center">
-<img align="centre" src="Spec.md/home.png" alt="Home Page" />
-<p>
-
 
 # SETUP/INSTALLATION REQUIREMENTS.
 
