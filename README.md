@@ -47,7 +47,7 @@ A One Page Web-based Application Developed Using Quasar VueJs Framework used to 
 
 - To make sure you have the right version, use this command:
 
-#### `Terminal`
+###### `Terminal`
 
 ```
 vue --version
@@ -68,7 +68,7 @@ npm install -g @vue/cli
 
 - Type git clone, and then paste the URL
 
-#### `Terminal`
+###### `Terminal`
 
 ```
 git clone https://github.com/USERNAME/REPOSITORY
@@ -80,11 +80,11 @@ git clone https://github.com/USERNAME/REPOSITORY
 
 - FusionCharts is a JavaScript charting library that enables you to create interactive charts in the Project For Deeper clarification check Out Fusion Charts From the link below :point_down:
 
-[Fusion Chart]: http://www.reddit.com
+[Fusion Chart](http://www.reddit.com)
 
 - Install Fusion Charts
 
-#### `Terminal`
+###### `Terminal`
 
 ```
 npm install fusioncharts vue-fusioncharts --save
@@ -94,7 +94,7 @@ npm install fusioncharts vue-fusioncharts --save
 
 You can start the development server by using “quasar dev” command
 
-#### `Terminal`
+###### `Terminal`
 
 ```
 quasar dev
@@ -106,7 +106,7 @@ quasar dev
 
 - Everything should worked after the process but incase of error when raning the server Deleted ```node_modules``` folder and ran ```npm install``` After that, quasar dev should ran ok. Incase of another error reffer from the Quasar Documentation
 
-#### `Terminal`
+###### `Terminal`
 
 ```
 npm install
@@ -142,16 +142,16 @@ npm install
 
 To Check Out Some More Of My Projects Check Out My Repository and You Could Tell Me What You Think.
 
-[ :blush: My Repository]: https://github.com/zecollokaris?tab=repositories
+[:blush: My Repository](https://github.com/zecollokaris?tab=repositories)
 
 - I would Recommend 
 
 1. CryptoByte 
 
-[ CryptoByte]: https://github.com/zecollokaris/CryptoByte-Blockchain-Android
+[CryptoByte](https://github.com/zecollokaris/CryptoByte-Blockchain-Android)
 
 2. Quadcopter
 
-[ Remote Control Quadcopter]: https://github.com/zecollokaris/Remote-Control-Falcon-1-Quadcopter
+[Remote Control Quadcopter](https://github.com/zecollokaris/Remote-Control-Falcon-1-Quadcopter)
 
 :stuck_out_tongue: 
