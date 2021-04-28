@@ -12,7 +12,7 @@ A **Single Page Web-based Application** Developed Using **Quasar VueJs Framework
 ## Display Video
 
 <p align="center">
-<img align="centre" src="https://user-images.githubusercontent.com/36197725/116424136-eef45100-a849-11eb-8acb-d0787aaccf2c.gif" alt="Landing Page" />
+<img align="centre" src="https://user-images.githubusercontent.com/36197725/116451745-916dfd80-a865-11eb-9ed7-11e6c036e47b.gif" alt="Landing Page" />
 <p>
 
 
