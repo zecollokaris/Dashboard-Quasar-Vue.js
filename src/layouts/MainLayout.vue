@@ -9,7 +9,7 @@
                   <q-toolbar-title>
 
                       <!-- Search Input -->
-                      <div class="Search-Input" style="max-width: 440px; max-height: 56px;">
+                      <div class="Search-Input">
                         <q-input
                           rounded standout="bg-teal text-white"
                           v-model="model"

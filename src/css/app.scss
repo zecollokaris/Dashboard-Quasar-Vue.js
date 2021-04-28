@@ -115,6 +115,12 @@
     background-color: #ffffff;
 }
 
+// Serach Input
+.Search-Input{
+    width: 440px;
+    height: 56px;
+}
+
 // Toggle Icon In Nav Bar
 .Toggle{
     position: absolute;
@@ -291,8 +297,6 @@
     right: 0px;
 }
 
-
-
 // Success Rate Chart
 #Success-Rate {
     width: 50%;
@@ -396,6 +400,103 @@
     margin: 14px 0 27px 160px;
     margin-top: -60px;
 }
+
+
+
+/* #################################### */
+/* ################################### */
+/*     >>>>  MEDIA QUERIES!  <<<<     */
+/* ################################# */
+/* ################################ */
+
+/* ##################################### */
+/* View Width 1500 */
+/* ##################################### */
+
+  /* * Large Desktop Screens* */
+@media (max-width: 1500px) {
+
+    // Serach Input
+    .Search-Input{
+        width: 320px;
+    }
+
+    // Toggle Icon In Nav Bar
+    .Toggle{
+        margin-left: 37%;
+    }
+
+    // Live Text
+    .Live{
+        display: none;
+    }
+
+    // Language Selector
+    .Language-Selector{
+        width: 150px;
+    }
+
+    // Notification Container.
+    .Notification{
+        margin-left: 63%;
+    }
+
+    // Notification Alert Pop Up
+    .Notification-Alert{
+        margin-left: 65%;
+    }
+
+
+    // User Section.
+    // User Section Containing
+    // User-Image, User-Name
+    .User{
+        width: 200px;
+        margin-left: 72%;
+    }
+}
+
+/* ##################################### */
+/* View Width 1200 */
+/* ##################################### */
+  /* * Large Desktop * */
+  @media (max-width: 1200px) {
+
+    // Column Containg Messages and Stats
+    .column2{
+        display: none;
+    }
+
+    // Language Selector
+    .Language-Selector{
+        display: none;
+    }
+
+    // Toggle Icon In Nav Bar
+    .q-toggle__inner {
+        display: none;
+    }
+
+    // Notification Container.
+    .Notification{
+        margin-left: 50%;
+    }
+
+    // Notification Alert Pop Up
+    .Notification-Alert{
+        margin-left: 53%;
+    }
+
+    // User Section.
+    // User Section Containing
+    // User-Image, User-Name
+    .User{
+        width: 150px;
+        margin-left: 65%;
+    }
+
+  }
+
 /* #################################### */
 /* #################################### */
 //              THE END
