@@ -38,7 +38,7 @@
 
 
                       <!-- Language Selector -->
-                      <q-btn-dropdown class="Language-Selector" rounded no-caps label="English" dropdown-icon="change_history">
+                      <q-btn-dropdown class="Language-Selector" rounded no-caps label="English" dropdown-icon="expand_more">
                         <q-list>
                           <q-item clickable v-close-popup @click="onItemClick">
 
@@ -77,6 +77,7 @@
                         </q-avatar>
                         <p class="User-Name">User Name</p>
                         <p class="User-Id">test</p>
+                        <q-icon class="User-Selector" name="expand_more" />
                       </q-chip>
 
                   </q-toolbar-title>
