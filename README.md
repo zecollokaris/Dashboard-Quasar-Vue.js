@@ -43,9 +43,9 @@ A One Page Web-based Application Developed Using Quasar VueJs Framework used to 
 **Follow The Below nstructions For Set Up.**
 
 
-1. Install Quasar
+1. [Install Quasar](https://quasar.dev/start/vue-cli-plugin)
 
-- To make sure you have the right version, use this command:
+To make sure you have the right version, use this command:
 
 ###### `Terminal`
 
@@ -53,20 +53,20 @@ A One Page Web-based Application Developed Using Quasar VueJs Framework used to 
 vue --version
 ```
 
-- Install Vue CLI (v4+) as follows:
+Install Vue CLI (v4+) as follows:
 
-#### `Terminal`
+###### `Terminal`
 
 ```
 npm install -g @vue/cli
 ```
 
 
-2. Clone The Repository 
+2. [Clone The Repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
 
-- Open Terminal and Change the current working directory to the location where you want the cloned directory.
+Open Terminal and Change the current working directory to the location where you want the cloned directory.
 
-- Type git clone, and then paste the URL
+Type git clone, and then paste the URL
 
 ###### `Terminal`
 
@@ -74,15 +74,15 @@ npm install -g @vue/cli
 git clone https://github.com/USERNAME/REPOSITORY
 ```
 
-3. Open the CLoned Repository to Install Dependancies before Running the Project.
+3. [Open the CLoned Repository to Install Dependancies before Running the Project.](https://quasar.dev/quasar-cli/commands-list)
 
-4. Install Fusion Charts Components Via npm
+4. [Install Fusion Charts Components Via npm](https://www.fusioncharts.com/dev/getting-started/vue/your-first-chart-using-vuejs)
 
-- FusionCharts is a JavaScript charting library that enables you to create interactive charts in the Project For Deeper clarification check Out Fusion Charts From the link below :point_down:
+FusionCharts is a JavaScript charting library that enables you to create interactive charts in the Project For Deeper clarification check Out Fusion Charts From the link below :point_down:
 
 [Fusion Chart](http://www.reddit.com)
 
-- Install Fusion Charts
+Install Fusion Charts
 
 ###### `Terminal`
 
@@ -90,7 +90,7 @@ git clone https://github.com/USERNAME/REPOSITORY
 npm install fusioncharts vue-fusioncharts --save
 ```
 
-5. Start Development Server
+5. [Start Development Server](https://quasar.dev/quasar-cli/commands-list)
 
 You can start the development server by using “quasar dev” command
 
@@ -102,7 +102,7 @@ quasar dev
 
 
 
-6. Incase of Errors When Starting the Server
+6. [Incase of Errors When Starting the Server](https://quasar.dev/introduction-to-quasar)
 
 - Everything should worked after the process but incase of error when raning the server Deleted ```node_modules``` folder and ran ```npm install``` After that, quasar dev should ran ok. Incase of another error reffer from the Quasar Documentation
 
@@ -128,15 +128,17 @@ npm install
 
 # TECHNOLOGIES USED
 
-- HTML
+1 HTML
 
-- CSS
+2 CSS
 
-- Fusion Chart Charting Library
+3 Fusion Chart Charting Library
 
-- Quasar FrameWork
+4 Quasar FrameWork
 
-- Vue.js
+5 Vue.js
+
+- 
 
 # FAQ
 
@@ -146,12 +148,8 @@ To Check Out Some More Of My Projects Check Out My Repository and You Could Tell
 
 - I would Recommend 
 
-1. CryptoByte 
+1. [CryptoByte](https://github.com/zecollokaris/CryptoByte-Blockchain-Android)
 
-[CryptoByte](https://github.com/zecollokaris/CryptoByte-Blockchain-Android)
-
-2. Quadcopter
-
-[Remote Control Quadcopter](https://github.com/zecollokaris/Remote-Control-Falcon-1-Quadcopter)
+2. [Remote Control Quadcopter](https://github.com/zecollokaris/Remote-Control-Falcon-1-Quadcopter)
 
 :stuck_out_tongue: 
