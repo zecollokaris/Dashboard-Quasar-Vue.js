@@ -5,6 +5,7 @@
   "productName": "dashboard",
   "author": "zecollokaris <collo.kariss@gmail.com>",
   "private": true,
+  
   "scripts": {
     "lint": "eslint --ext .js,.vue ./",
     "test": "echo \"No test specified\" && exit 0",
