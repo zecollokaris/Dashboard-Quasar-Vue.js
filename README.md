@@ -11,28 +11,34 @@ A **Single Page Web-based Application** Developed Using **Quasar VueJs Framework
 
 ## Display Video :movie_camera:
 
-<kbd>
+
 <p align="center">
+<kbd>
 <img align="centre" src="https://user-images.githubusercontent.com/36197725/116453687-d85cf280-a867-11eb-859f-074d492a853b.gif" alt="Landing Page" />
-<p>
 </kbd>
+<p>
+
 
 
 ## Landing Page Page :desktop_computer:
 
-<kbd>
+
 <p align="center">
+<kbd>
 <img align="centre" src="Spec.md/Landing1.png" alt="Login Page" />
-<p>
 </kbd>
+<p>
+
 
 ## Landing Page Page Scroll :desktop_computer:
 
-<kbd>
+
 <p align="center">
+<kbd>
 <img align="centre" src="Spec.md/Landing2.png" alt="Reset Password Page" />
-<p>
 </kbd>
+<p>
+
 
 ## Mobile View :iphone:
 
