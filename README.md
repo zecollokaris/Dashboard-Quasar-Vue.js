@@ -31,9 +31,9 @@ A **Single Page Web-based Application** Developed Using **Quasar VueJs Framework
 ## Mobile View
 
 <p align="center">
-<img align="left" height="300" width="150" src="Spec.md/Mobile1.png" alt="Moble Open Menu" />
-<img align="centre" height="300" width="150" src="Spec.md/Mobile2.png" alt="Moble Open Menu 2" />
-<img align="right" height="300" width="150" src="Spec.md/Mobile3.png" alt="Mobile Landing Menu Closed" />
+<img align="left" height="260" width="150" src="Spec.md/Mobile1.png" alt="Moble Open Menu" />
+<img align="centre" height="260" width="150" src="Spec.md/Mobile2.png" alt="Moble Open Menu 2" />
+<img align="right" height="260" width="150" src="Spec.md/Mobile3.png" alt="Mobile Landing Menu Closed" />
 <p>
 
 ## Tablet View
