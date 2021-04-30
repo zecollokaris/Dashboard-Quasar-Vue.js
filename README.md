@@ -9,26 +9,26 @@ A **Single Page Web-based Application** Developed Using **Quasar VueJs Framework
 
 # DISPLAY
 
-## Display Video
+## Display Video :movie_camera:
 
 <p align="center">
 <img align="centre" src="https://user-images.githubusercontent.com/36197725/116453687-d85cf280-a867-11eb-859f-074d492a853b.gif" alt="Landing Page" />
 <p>
 
 
-## Landing Page Page
+## Landing Page Page :desktop_computer:
 
 <p align="center">
 <img align="centre" src="Spec.md/Landing1.png" alt="Login Page" />
 <p>
 
-## Landing Page Page Scroll
+## Landing Page Page Scroll :desktop_computer:
 
 <p align="center">
 <img align="centre" src="Spec.md/Landing2.png" alt="Reset Password Page" />
 <p>
 
-## Mobile View
+## Mobile View :iphone:
 
 <p align="center">
 <img align="left" height="260" width="150" src="Spec.md/Mobile1.png" alt="Moble Open Menu" />
@@ -36,7 +36,7 @@ A **Single Page Web-based Application** Developed Using **Quasar VueJs Framework
 <img align="right" height="260" width="150" src="Spec.md/Mobile3.png" alt="Mobile Landing Menu Closed" />
 <p>
 
-## Tablet View
+## Tablet View :iphone: 
 
 <p align="center">
 <img align="left" height="300" width="250" src="Spec.md/Tablet1.png" alt="Tablet Open Menu" />
@@ -44,7 +44,7 @@ A **Single Page Web-based Application** Developed Using **Quasar VueJs Framework
 <img align="right" height="300" width="250" src="Spec.md/Tablet3.png" alt="Tablet Landing Menu Closed" />
 <p>
 
-# SETUP/INSTALLATION REQUIREMENTS.
+# SETUP/INSTALLATION REQUIREMENTS. :gear:
 
 **Follow The Below nstructions For Set Up.**
 
