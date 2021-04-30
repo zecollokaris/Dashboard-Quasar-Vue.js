@@ -11,22 +11,28 @@ A **Single Page Web-based Application** Developed Using **Quasar VueJs Framework
 
 ## Display Video :movie_camera:
 
+<kbd>
 <p align="center">
 <img align="centre" src="https://user-images.githubusercontent.com/36197725/116453687-d85cf280-a867-11eb-859f-074d492a853b.gif" alt="Landing Page" />
 <p>
+</kbd>
 
 
 ## Landing Page Page :desktop_computer:
 
+<kbd>
 <p align="center">
 <img align="centre" src="Spec.md/Landing1.png" alt="Login Page" />
 <p>
+</kbd>
 
 ## Landing Page Page Scroll :desktop_computer:
 
+<kbd>
 <p align="center">
 <img align="centre" src="Spec.md/Landing2.png" alt="Reset Password Page" />
 <p>
+</kbd>
 
 ## Mobile View :iphone:
 
@@ -36,7 +42,7 @@ A **Single Page Web-based Application** Developed Using **Quasar VueJs Framework
 <img align="right" height="260" width="150" src="Spec.md/Mobile3.png" alt="Mobile Landing Menu Closed" />
 <p>
 
-## Tablet View :iphone: 
+## Tablet View 
 
 <p align="center">
 <img align="left" height="300" width="250" src="Spec.md/Tablet1.png" alt="Tablet Open Menu" />
@@ -119,7 +125,7 @@ npm install
 ```
 
 
-#  PREREQUISITES
+#  PREREQUISITES 
 
 - You need to have nano text editor installed. you can find out whether you have it installed by **typing nano --version in your terminal.** For most linux distributions, it is installed by default. However, if you don't have it installed, **you can quicky do that by typing sudo apt-get install nano in your terminal.**
 
@@ -132,7 +138,7 @@ npm install
 **3. Npm Package Manager.**
 
 
-# TECHNOLOGIES USED
+# TECHNOLOGIES USED :man_technologist:
 
 **1. HTML**
 
@@ -148,7 +154,7 @@ npm install
 
 **6. Adobe Photoshop**
 
-# FAQ
+# FAQ :wave:
 
 **Check Out Some More Of My Projects Check Out My Repository** and You Could Tell Me What You Think.
 
