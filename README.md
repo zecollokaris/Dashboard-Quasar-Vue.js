@@ -32,6 +32,7 @@ A **Single Page Web-based Application** Developed Using **Quasar VueJs Framework
 
 <p align="center">
 <img align="left" width="250" src="Spec.md/Mobile1.png" alt="Moble Open Menu" />
+<img align="centre" width="250" src="Spec.md/Tablet2.png" alt="Moble Open Menu 2" />
 <img align="right" width="250" src="Spec.md/Mobile2.png" alt="Mobile Landing Menu Closed" />
 <p>
 
@@ -39,7 +40,8 @@ A **Single Page Web-based Application** Developed Using **Quasar VueJs Framework
 
 <p align="center">
 <img align="left" width="250" src="Spec.md/Tablet1.png" alt="Tablet Open Menu" />
-<img align="right" width="250" src="Spec.md/Tablet1.png" alt="Tablet Landing Menu Closed" />
+<img align="centre" width="250" src="Spec.md/Tablet2.png" alt="Tablet Open Menu 2" />
+<img align="right" width="250" src="Spec.md/Tablet3.png" alt="Tablet Landing Menu Closed" />
 <p>
 
 # SETUP/INSTALLATION REQUIREMENTS.
