@@ -28,6 +28,20 @@ A **Single Page Web-based Application** Developed Using **Quasar VueJs Framework
 <img align="centre" src="Spec.md/Landing2.png" alt="Reset Password Page" />
 <p>
 
+## Mobile View
+
+<p align="center">
+<img align="left" width="250" src="Spec.md/Mobile1.png" alt="Moble Open Menu" />
+<img align="right" width="250" src="Spec.md/Mobile2.png" alt="Mobile Landing Menu Closed" />
+<p>
+
+## Tablet View
+
+<p align="center">
+<img align="left" width="250" src="Spec.md/Tablet1.png" alt="Tablet Open Menu" />
+<img align="right" width="250" src="Spec.md/Tablet1.png" alt="Tablet Landing Menu Closed" />
+<p>
+
 # SETUP/INSTALLATION REQUIREMENTS.
 
 **Follow The Below nstructions For Set Up.**
