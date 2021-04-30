@@ -459,8 +459,8 @@
 /* ##################################### */
 /* View Width 1200 */
 /* ##################################### */
-  /* * Large Desktop * */
-  @media (max-width: 1200px) {
+/* * Large Desktop * */
+@media (max-width: 1200px) {
 
     // Column Containg Messages and Stats
     .column2{
@@ -495,7 +495,106 @@
         margin-left: 65%;
     }
 
-  }
+}
+
+/* ##################################### */
+/* View Width 1100 */
+/* ##################################### */
+
+/* * Large Desktop * */
+@media (max-width: 1100px) {
+
+    // Dahsboard Height
+    .q-layout--standard{
+        height: 1500px;
+    }
+
+    // Column Containing Charts.
+    .column1{
+        float: none;
+        width: 100%;
+    }
+
+    // Success Rate Chart
+    #Success-Rate {
+        max-width: 100px;
+        float: none;
+    }
+
+    // Payment ssues Chart
+    #Payment-Issues-Chart {
+        width: 20%;
+        float: none;
+    }
+
+}
+
+/* ##################################### */
+/* View Width 650 */
+/* ##################################### */
+
+/* * Large Desktop * */
+@media (max-width: 650px) {
+    // Notification Container.
+    .Notification{
+        margin-left: 80%;
+        z-index: 1000;
+    }
+
+    // Notification Alert Pop Up
+    .Notification-Alert{
+        z-index: 1000;
+        margin-left: 84%;
+    }
+
+
+    // User Section.
+    // User Section Containing
+    // User-Image, User-Name
+    .q-chip__content, .q-chip--square{
+        display: none;
+    }
+    .q-chip--square{
+        width: 1px;
+        left: 20%;
+    }
+
+}
+
+/* ##################################### */
+/* View Width 450 */
+/* ##################################### */
+
+/* * Large Desktop * */
+@media (max-width: 450px) {
+
+    // Serach Input
+    .Search-Input{
+        max-width: 320px;
+        margin: auto;
+    }
+    // Notification Container.
+    .Notification{
+        display: none;
+    }
+
+    // Notification Alert Pop Up
+    .Notification-Alert{
+        display: none;
+    }
+
+    // User Section.
+    // User Section Containing
+    // User-Image, User-Name
+    .q-chip__content, .q-chip--square{
+        display: none;
+    }
+    .q-chip--square{
+        width: 1px;
+        left: 20%;
+    }
+
+}
 
 /* #################################### */
 /* #################################### */
