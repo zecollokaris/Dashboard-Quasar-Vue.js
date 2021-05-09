@@ -40,6 +40,7 @@ A **Single Page Web-based Application** Developed Using **Quasar VueJs Framework
 <p>
 
 
+
 ## Mobile View :iphone:
 
 <p align="center">
