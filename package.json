@@ -9,7 +9,6 @@
     "lint": "eslint --ext .js,.vue ./",
     "test": "echo \"No test specified\" && exit 0",
     "build": "quasar build",
-    "deploy": "vercel",
     "start": "node server.js",
     "heroku-postbuild": "yarn && yarn build"
   },
